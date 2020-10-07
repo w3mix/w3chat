@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" style="height:100%">
+<head>
+  <meta charset="utf-8">
+  <title>W3.CSS web chat template</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/w3-css/4.1.0/4/w3pro.css">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style media="screen">
+  /* Refs
+  Doodle image:
+  https://www.freepik.com/free-vector/doodle-travel-background_3731537.htm#page=1&query=doodle%20background&position=7
+  */
+  </style>
+</head>
+<body>
+
+  <div class="w3-flex w3-light" style="height:100%; flex-direction:column">
+    <div class="w3-row" style="height:100%">
+
+      <!-- SIDEBAR -->
+      <div class="w3-col l4 m5 flex-column w3-border-right" style="height:100%">
+        <div class="flex bg-gray w3-padding">
+          <div class="grow">
+            <img src="https://www.w3schools.com/w3images/avatar3.png" class="w3-image w3-circle" width="40" alt="">
+          </div>
+          <div style="line-height:1">
+            <button class="w3-button text-gray"><i class="zmdi zmdi-dot-circle-alt w3-xlarge"></i></button>
+            <button class="w3-button text-gray"><i class="zmdi zmdi-comment-text w3-xlarge"></i></button>
+            <div class="w3-dropdown-click" style="position:relative; z-index:1111">
+              <button onclick="this.parentNode.children[1].classList.toggle('w3-show')" class="w3-button w3-black w3-round w3-xlarge text-gray">
+                <i class="zmdi zmdi-more-vert"></i>
+              </button>
+              <div class="w3-dropdown-content w3-bar-block w3-border w3-animate-opacity w3-card" style="right:0">
+                <a href="#" class="w3-bar-item w3-button">Option 1</a>
+                <a href="#" class="w3-bar-item w3-button">Option 2</a>
+                <a href="#" class="w3-bar-item w3-button">Option 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w3-padding w3-padding-16 bg-blue flex">
+          <div class="w3-margin-right">
+            <span class="zmdi-hc-stack zmdi-hc-lg zmdi-hc-2x">
+              <i class="zmdi zmdi-circle zmdi-hc-stack-2x text-white"></i>
+              <i class="zmdi zmdi-notifications-off zmdi-hc-stack-1x text-blue"></i>
+            </span>
+          </div>
+          <div class="grow" style="padding-top:8px">
+            <span class="w3-large">Get notified of new messages</span><br>
+            Turn on desktop notifications >
+          </div>
+        </div>
+        <div class="w3-row bg-lightgray w3-padding w3-border-bottom">
+          <div class="flex bg-white w3-round-xxlarge w3-border-0">
+            <div class="w3-padding text-gray w3-opacity">
+              <i class="zmdi zmdi-search w3-large"></i>
+            </div>
+            <input type="text" class="w3-input w3-border-0" placeholder="Search or start new chat">
+            <div class="w3-padding">
+              &nbsp;
+            </div>
+          </div>
+        </div>
+        <div class="grow scroll">
+          <ul class="w3-ul">
+            <li class="flex">
+              <div>
+                <img src="https://www.w3schools.com/w3images/avatar2.png" class="w3-image w3-circle" width="50" height="50" alt="">
+              </div>
+              <div class="w3-large w3-margin-left grow">
+                Arthur Ronconi<br>
+                <small class="text-gray w3-right-align"><i class="zmdi zmdi-check-all" style="font-size:16px!important"></i> Lorem ipsum dolor sit...</small>
+              </div>
+              <div class="text-gray">
+                <small>08:45</small><br>
+                <div class="w3-dropdown-click">
+                  <button onclick="this.parentNode.children[1].classList.toggle('w3-show')" class="w3-button w3-black w3-round">
+                    <i class="zmdi zmdi-chevron-down"></i>
+                  </button>
+                  <div class="w3-dropdown-content w3-bar-block w3-border w3-animate-opacity w3-card" style="right:0">
+                    <a href="#" class="w3-bar-item w3-button">Option 1</a>
+                    <a href="#" class="w3-bar-item w3-button">Option 2</a>
+                    <a href="#" class="w3-bar-item w3-button">Option 3</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="flex">
+              <div>
+                <img src="https://www.w3schools.com/w3images/avatar6.png" class="w3-image w3-circle" width="50" height="50" alt="">
+              </div>
+              <div class="w3-large w3-margin-left grow">
+                Jane Goodall<br>
+                <small class="text-gray"><i class="zmdi zmdi-check-all" style="font-size:16px!important"></i> Lorem ipsum dolor sit...</small>
+              </div>
+              <div class="text-gray w3-right-align">
+                <small>08:50</small><br>
+                <div class="w3-dropdown-click">
+                  <button onclick="this.parentNode.children[1].classList.toggle('w3-show')" class="w3-button w3-black w3-round">
+                    <i class="zmdi zmdi-chevron-down"></i>
+                  </button>
+                  <div class="w3-dropdown-content w3-bar-block w3-border w3-animate-opacity w3-card" style="right:0">
+                    <a href="#" class="w3-bar-item w3-button">Option 1</a>
+                    <a href="#" class="w3-bar-item w3-button">Option 2</a>
+                    <a href="#" class="w3-bar-item w3-button">Option 3</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- CHAT -->
+      <div class="w3-col l8 m7 flex-column" style="height:100%; background:url(images/bg-doodle.jpg)">
+        <div class="flex bg-gray w3-padding w3-border-bottom">
+          <div class="">
+            <img src="https://www.w3schools.com/w3images/avatar5.png" class="w3-image w3-circle" width="40" alt="">
+          </div>
+          <div class="w3-padding w3-large grow">
+            Marie Curie
+          </div>
+          <div style="line-height:1">
+            <button class="w3-button text-gray"><i class="zmdi zmdi-search w3-xlarge"></i></button>
+            <div class="w3-dropdown-click" style="position:relative; z-index:1111">
+              <button onclick="this.parentNode.children[1].classList.toggle('w3-show')" class="w3-button w3-black w3-round w3-xlarge text-gray">
+                <i class="zmdi zmdi-more-vert"></i>
+              </button>
+              <div class="w3-dropdown-content w3-bar-block w3-border w3-animate-opacity w3-card" style="right:0">
+                <a href="#" class="w3-bar-item w3-button">Option 1</a>
+                <a href="#" class="w3-bar-item w3-button">Option 2</a>
+                <a href="#" class="w3-bar-item w3-button">Option 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grow">
+          <br>
+          <br>
+          <br>
+          <div class="message">
+            <div class="w3-display-container w3-show-inline-block bg-white w3-round-large w3-padding-small w3-card">
+              Who controls the past controls the future: <br>
+              who controls the present controls the past.
+              <small class="w3-display-bottomright w3-padding-small text-gray text-small">08:50</small>
+            </div>
+          </div>
+          <div class="message">
+            <div class="w3-show-inline-block bg-white w3-round-large w3-padding-small w3-card">
+              Let's talk about 1984?
+              <small class="w3-display-bottomright w3-padding-small text-gray text-small">08:50</small>
+            </div>
+          </div>
+        </div>
+        <div class="flex bg-gray w3-padding-small w3-border-bottom" style="align-items:center">
+          <div class="text-gray">
+            <button class="w3-button w3-bar-item"><i class="zmdi zmdi-mood w3-xlarge"></i></button>
+          </div>
+          <div class="text-gray">
+            <button class="w3-button w3-bar-item"><i class="zmdi zmdi-attachment-alt w3-xlarge rotate-45"></i></button>
+          </div>
+          <div class="w3-padding-small grow">
+            <input type="text" class="w3-input w3-border-0 w3-round-xxlarge w3-padding" placeholder="Type a message">
+          </div>
+          <div class="w3-right-align">
+            <div class="w3-bar w3-right w3-show-inline-block text-gray" style="width:auto">
+              <button class="w3-button w3-bar-item"><i class="zmdi zmdi-mail-send w3-xlarge"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
