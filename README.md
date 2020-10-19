@@ -15,4 +15,4 @@ https://w3mix.com/demos/w3chat
 
 ## Author
 
-[Arthur Araújo](htts://github.com/webarthur)
+[Arthur Araújo](https://github.com/webarthur)
